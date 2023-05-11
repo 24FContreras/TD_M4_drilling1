@@ -5,8 +5,6 @@ const formulario = document.querySelector("#formulario");
 formulario.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  console.log("Enviando formulario");
-
   const data = new FormData(formulario);
   const dataObjeto = Object.fromEntries([...data.entries()]);
 
